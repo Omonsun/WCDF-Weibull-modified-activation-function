@@ -27,21 +27,13 @@ The function was evaluated against ReLU and GELU on MNIST, Fashion-MNIST, CIFAR-
 
 For input \(x\), shape parameter \(k\), and scale parameter \(\lambda\), WCDF is defined as:
 
-\[
-\operatorname{WCDF}(x; k,\lambda) =
-\begin{cases}
-1-\exp\left[-\left(\frac{x}{\lambda}\right)^k\right],
-& x \geq 0, \\[6pt]
-0,
-& x < 0.
-\end{cases}
-\]
+$\operatorname{WCDF}(x; k,\lambda) =\begin{cases}1-\exp\left[-\left(\frac{x}{\lambda}\right)^k\right],& x \geq 0, \\[6pt]0,& x < 0.\end{cases}$
 
 where:
 
-- \(x\) is the input to the activation function
-- \(k > 0\) is the shape parameter
-- \(\lambda > 0\) is the scale parameter
+- $x$ is the input to the activation function
+- $k > 0$ is the shape parameter
+- $\lambda > 0$ is the scale parameter
 
 The shape parameter controls how sharply the function rises, while the scale parameter controls the horizontal stretching or compression of the activation curve.
 
