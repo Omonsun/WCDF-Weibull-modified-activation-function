@@ -322,11 +322,7 @@ You may also include the DOI in a BibTeX entry:
 }
 ```
 
-## License
 
-The code in this repository may be released under the MIT License. Add a `LICENSE` file containing the official MIT License text before publishing the repository.
-
-The research paper remains subject to the copyright and usage terms of its publisher. The repository license applies only to the source code and repository materials for which the authors hold the necessary rights.
 
 ## Acknowledgment
 
