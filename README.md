@@ -27,7 +27,13 @@ The function was evaluated against ReLU and GELU on MNIST, Fashion-MNIST, CIFAR-
 
 For input $x$, shape parameter $k$, and scale parameter $lambda$, WCDF is defined as:
 
-$$\operatorname{WCDF}(x; k,\lambda) =\begin{cases}1-\exp\left[-\left(\frac{x}{\lambda}\right)^k\right],& x \geq 0, \\[6pt]0,& x < 0.\end{cases}$$
+$$
+\mathrm{WCDF}(x; k,\lambda)=
+\begin{cases}
+1-\exp\left(-\left(\dfrac{x}{\lambda}\right)^k\right), & x \ge 0, \\
+0, & x < 0.
+\end{cases}
+$$
 
 where:
 
